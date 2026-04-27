@@ -1,0 +1,57 @@
+
+Workflow
+1. Capture - The phone captures the image(which is the foot)
+2. Reference - The scale object will be a credit card/ID
+3. Process - The image is processed to the backend/ML model
+4. Output - Information returned to user profile
+
+
+Foot Scan Details
+Top-Down View : For width and length
+Side View : For arch and instep
+
+
+
+Photo Details :
+1. The card should be lined up next to the foot with the card going with the direction of the foot
+2. The user should hold the phone level( I want to use this, Most pros use a "Level" UI element that turns green when the phone is flat)
+3. Please ensure that the background of the image is not white and make sure the card and the ground are not the same color.
+
+
+Valdiation Checklist:
+1. Is the entire foot in the frame?
+
+2. Is the card in the frame?
+
+3. Does everything from here check off?
+
+- Photo Details :
+
+1. The card should be lined up next to the foot with the card going with the direction of the foot
+
+2. The user should hold the phone level( I want to use this, Most pros use a "Level" UI element that turns green when the phone is flat)
+
+3. Please ensure that the background of the image is not white and make sure the card and the ground are not the same color.
+
+Process Check:
+    IDLE: User is on the home screen.
+    INSTRUCTIONS: User is reading your 3-step guide.
+    CAPTURING: The camera is open, and the "Level" UI is active.
+    VALIDATING: The app is checking for the card and the foot.
+    SUCCESS: The measurements are calculated and saved to the profile.
+
+
+Common Feedback Messages (Focused on graceful failures)
+    1. The phone was tilted (not level).
+    2. The room is too dark.
+    3. The card is missing from the photo.
+    4. The background colors match too much
+
+
+    Feedback Messages
+    Failure Type.  Technical Reason,      "User-Facing ""Path to Success"" Message"
+    Tilt Error -> Accelerometer pitch/roll >±2∘ -> """Hold your phone flat! Watch for the level to turn green."""
+    Luminance Error -> Average pixel brightness too low -> """It's a bit dark in here. Try turning on a light for a clearer scan."""
+    Object Missing -> Card Bounding Box not detected -> """We can't find your card! Make sure it's visible right next to your foot."""
+    Contrast Error -> Delta between foot/floor colors is low -> """Hard to see your foot! Try standing on a floor with a different color."""
+

@@ -1,0 +1,19 @@
+{
+    "user_id" :"lethan123",
+    "demographics":{
+        "age": 22,
+        "gender": "MALE",
+        "weight_kg": 85
+},
+
+"foot_profile":{
+    "left_foot_mm": 0,
+    "right_foot_mm": 0,
+    "arch_type": "PENDING",
+    "width_type" : "PENDING"
+},
+"preferences":{
+    "activity":"running",
+    "preferred_brands":["Nike","Lululemon"]
+}
+}
