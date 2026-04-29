@@ -9,3 +9,7 @@ if(getApps().length === 0 ){
 }else{
     app = getApps()[0]
 }
+
+const db = getFirestore(app);
+
+export {db};
