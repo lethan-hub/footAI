@@ -1,0 +1,18 @@
+Project Structure
+    - use directory structure
+        ex:
+            /components (UI)
+            /services (the brains of the system)
+            /screens (different pages)
+
+Database
+    - Throughout this project, the database we are using is Firebase
+        Why?
+            - very agile
+            - fast
+            - supports offline
+            - popular with mobile apps today
+
+Tech Stack
+     Front - React Native with Expo
+     Backend - Firebase

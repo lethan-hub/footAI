@@ -1,0 +1,23 @@
+{
+  "name": "footai",
+  "version": "1.0.0",
+  "description": "Motivation :  - As an athlete and active individual, I have tried many different shoes and had to decide which are good and which are not. So with this app, individuals can easily access an application that measures their foot size and determines arch width, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lethan-hub/footAI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lethan-hub/footAI/issues"
+  },
+  "homepage": "https://github.com/lethan-hub/footAI#readme",
+  "dependencies": {
+    "firebase": "^12.12.1"
+  }
+}
