@@ -1,0 +1,93 @@
+Act like a professional developer! Currently, I want to create a project that focuses on project based learning so I can learn through each process. I want to ensure a sense of feeling like I am learning from a mid-level to senior level software engineer in development. Please act like you are a mid-level to senior level engineer that does not give me code, but provides demo code and gives me knowledge on how to do it. I do not want any code that I can copy and paste. I just want assistance meaning code that I can relate to or learn from, which I can create my own original code. This is the issue, I am an athlete and just an active person and I struggle with finding the right size shoe and shoe recommendations. I know that Fleetfeet has a system where it measures your foot size exactly and provides detailed information such as arch, width, etc. For this project, I want to create a software program that helps users measure there foot size, with detailed information like arch, width, etc. I want to make sure this is agile, so if changes are needed then I can do so. Right now, I have the information how I want it to be, but can not put it into words. So could you give me a plan? And with the initial plan that you have I can keep adding until we can the desire output we want? With a past response from AI, this is what it responded with so could you use this and add on to it? Target Audience:
+“The primary target audience is people who shop for shoes online and want personalized, accurate recommendations without going in-store. This includes individuals across all activity levels — from runners and athletes to people who stand all day at work — who need footwear tailored to their specific use case (running, football, standing, etc.).”
+MVP Features(Minimum Viable Product)(What must the system have?) (Version 1 Launch)
+Here are your Top 5 Core Features to focus on for the first 30 days:
+User Authentication + Profile Creation
+ Login, sign up, and save personal details (height, weight, gender, age, activity level).
+
+Foot Scanner / Gait Analysis
+ Users scan their foot and/or upload a walking video. The app analyzes shape and movement.
+
+Smart Shoe Recommendations
+ Personalized shoe suggestions based on user data and activity (running, football, standing, etc.).
+
+AI Chat Bot
+ In-app bot answers shoe-related questions, gives support, or guides users through the process.
+
+Review System
+ Users can read and write reviews on shoes they’ve tried to build community trust.
+
+🧠 Future Features (Post-MVP Roadmap)
+Shoe Shazam (Scan & Identify a Shoe)
+ Snap a pic or scan a shoe in the real world to get model info and buy options.
+
+Social Sharing / Wishlists
+ Let users share their shoe profile or wishlist with friends or across social platforms.
+
+Brand Database Expansion
+ Pull recommendations from multiple retailers (Nike, Adidas, etc.) via APIs or scraping.
+
+💡 Tech Stack Recommendation:
+Layer
+Tool
+Frontend
+React Native + Expo
+Web
+Expo for Web (works from same codebase)
+Backend
+Firebase (Auth + Firestore + Cloud Functions)
+AI Bot
+OpenAI API or Dialogflow
+Image Scan
+ML Kit by Google or custom TensorFlow model
+Hosting
+Firebase Hosting for web app + assets
+Feature 1: User Authentication + Profile User Stories:
+“As a new user, I want to create an account so that I can save my information.”
+
+“As a returning user, I want to log in so I can access my profile and shoe results.”
+
+“As a user, I want to fill out my profile (height, weight, gender, age, activity level) so that the app can personalize shoe recommendations.”
+
+“As a user, I want to log out securely when I’m done using the app.”
+
+“As a user, I want my personal information to be stored securely to protect my privacy.”
+
+“As a user, I want to ask the AI bot questions if I need help navigating or understanding shoe recommendations.”
+Feature 2: Foot Scanner & Gait Analysis + Extras
+“As a user, I want to scan my foot using my phone’s camera so that the app can measure its size and shape.”
+
+“As a user, I want to record a short video of the way I walk so that the app can analyze my gait.”
+
+“As a user, I want to upload existing photos or videos of my foot or walk in case I can’t scan live.”
+
+“As a user, I want clear instructions on how to perform the scan and video to ensure accurate results.”
+
+“As a user, I want feedback after the scan/video confirming the process was successful or asking me to try again if needed.”
+
+“As a user, I want to know my arch type (low, medium, high), foot width, and narrowness level from the scan results.”
+
+“As a user, I want to filter shoe recommendations by brand, color, activity type, size, and other preferences.”
+
+👟 Feature 3: Smart Shoe Recommendations
+“As a user, I want to receive personalized shoe recommendations based on my foot scan and profile data so that I can find shoes that fit well.”
+
+“As a user, I want recommendations to be categorized by activity type (running, football, standing, casual, etc.) so I can easily find shoes for my needs.”
+
+“As a user, I want to see detailed information about each recommended shoe, including brand, price, and user reviews.”
+
+“As a user, I want to save my favorite shoes to a wishlist or favorites list.”
+
+“As a user, I want the app to update recommendations if I change my profile data or activity preferences.”
+
+“As a user, I want to filter or sort recommendations by price, brand, or rating.”
+🤖 Feature 4: AI Chat Bot
+“As a user, I want to ask the AI bot questions about shoe recommendations so I can get quick help without leaving the app.”
+“As a user, I want the AI bot to guide me through the foot scanning and shoe selection process.”
+“As a user, I want the AI bot to provide tips on shoe care, fit, and usage based on my profile.”
+“As a user, I want to be able to ask the AI bot about shoe brands, styles, and availability.”
+“As a user, I want to feel confident that the AI bot respects my privacy and only uses my data to help me.”
+⭐️ Feature 5: Review System
+“As a user, I want to read reviews from other users about specific shoes to make better buying decisions.”
+“As a user, I want to write my own reviews after trying a shoe to share my experience.”
+“As a user, I want to rate shoes using a star system or similar to quickly express my opinion.”“As a user, I want to filter reviews by rating, date, or verified purchases.”“As a user, I want to report inappropriate or fake reviews to keep the community trustworthy.”
